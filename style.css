@@ -67,7 +67,7 @@ p,a,button{
 /* Button */
 .proceed-btn{
     width: 60%;
-    margin: auto
+    margin: auto;
 }
 .proceed-btn a{
     color: #ffffff;
@@ -242,6 +242,9 @@ input.invalid {
       width: 90%;
     }
     .faq-container{
+        width: 90%;
+    }
+    .proceed-btn{
         width: 90%;
     }
   }
