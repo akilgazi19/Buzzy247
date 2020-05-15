@@ -241,4 +241,7 @@ input.invalid {
     #regForm {
       width: 90%;
     }
+    .faq-container{
+        width: 90%;
+    }
   }
