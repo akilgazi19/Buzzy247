@@ -14,7 +14,7 @@ p,a,button{
 /* Video */
 .video{
     margin-top: 5%;
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 .video video{
@@ -245,6 +245,13 @@ input.invalid {
         width: 90%;
     }
     .proceed-btn{
+        width: 90%;
+    }
+    .video{
+        width: 90%;
+        margin: auto;
+    }
+    .video video{
         width: 90%;
     }
   }
