@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzzy 24 X 7 - Questionnare</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="regForm">
+        <img src="./images/logo.png" alt="logo">
+        <h2>Questionnaire</h2>
+
+<!-- Section One -->
+        <div class="tab">
+         <!--  Email-->
+         <label for="Email"> Email:</label>
+         <p><input placeholder="Ex. buzzy247@gmail.com" oninput="this.className = ''" name="email"></p>
+
+         <!-- Phone -->
+         <label for="Phone">Phone:</label>
+         <p><input placeholder="Ex. 01942010050" oninput="this.className = ''" name="phone"></p>
+        </div>
+
+<!-- Section Two -->
+        <div class="tab">
+           <!-- Shop name -->
+           <label for="Name"> Shop Name:</label>
+           <p><input placeholder="Shop name" oninput="this.className = ''" name="shopName"></p>
+
+           <!-- Product name -->
+           <label for="Name">Items you will sell online:</label>
+           <p><input placeholder="Product name" oninput="this.className = ''" name="productName"></p>
+
+           <!-- Product image -->
+           <div>
+            <label> Do you have images of the products:</label>
+            <label class="radio-btn">Yes
+               <input type="radio" name="productImage">
+               <span class="checkmark"></span>
+            </label>
+            <label class="radio-btn">No
+               <input type="radio" name="productImage">
+               <span class="checkmark"></span>
+            </label>
+           </div>
+          <br>
+          <!-- Product description -->
+          <div>
+          <label>Do you have product descriptions:</label>
+            <label class="radio-btn">Yes
+               <input type="radio" name="description">
+               <span class="checkmark"></span>
+            </label>
+            <label class="radio-btn">No
+               <input type="radio" name="description">
+               <span class="checkmark"></span>
+            </label>
+           </div>
+        </div>
+
+<!-- Section Three -->
+
+      <div class="tab">
+         <!--  Upload file-->
+         <label for="Trade license">Trade License</label>
+         <p><input type="file"></p>
+         
+
+         <label for="Trade license">Passport</label>
+         <p><input type="file"></p>
+
+         <label for="Trade license">Emirates Id</label>
+         <p><input type="file"></p>
+
+         <label for="Trade license">Visa</label>
+         <p><input type="file"></p>
+      </div>
+
+        <!-- <div class="tab">
+           Login Info:
+           <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+           <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+        </div> -->
+
+        <div style="overflow:auto;">
+           <div style="float:right;">
+              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+           </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+           <span class="step"></span>
+           <span class="step"></span>
+           <span class="step"></span>
+        </div>
+     </form>
+
+     <script src="script.js"></script>
+</body>
+</html>
