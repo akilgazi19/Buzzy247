@@ -138,10 +138,12 @@ input.invalid {
     padding: 10px 20px;
     margin-bottom: 5%;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 #regForm button:hover {
-    opacity: 0.5;
+    opacity: 0.8;
+    transition: 3s;
 }
 
 #prevBtn {
