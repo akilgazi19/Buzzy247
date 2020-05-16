@@ -240,7 +240,7 @@ input.invalid {
 
 @media only screen and (max-width: 600px) {
     #regForm {
-      width: 90%;
+      width: 100%;
     }
     .faq-container{
         width: 90%;
