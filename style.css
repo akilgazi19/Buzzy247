@@ -70,7 +70,8 @@ p,a,button{
 /* Button */
 .proceed-btn{
     width: 60%;
-    margin: auto;
+    margin: 5% auto;
+    text-align: center;
 }
 .proceed-btn a{
     color: #ffffff;
@@ -79,8 +80,6 @@ p,a,button{
     line-height: inherit;
     padding: 10px 20px;
     text-decoration: none;
-    float: right;
-    margin-bottom: 5%;
     letter-spacing: 1px;
 }
 .proceed-btn a:hover{
