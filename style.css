@@ -23,48 +23,67 @@ p,a,button{
     border-radius: 5px;
 }
 
-/* FAQ */
-.faq-container{
-    width: 60%;
-    height: 400px;
-    margin: 0 auto 5% auto;
-    overflow: auto;
-    display: flex;
-    background-color: #ffffff;
-    flex-direction: column;
-    padding: 3%;
-    border-radius: 10px;
-    -webkit-box-shadow: 1px 10px 50px -6px rgba(0,0,0,0.19);
-    -moz-box-shadow: 1px 10px 50px -6px rgba(0,0,0,0.19);
-    box-shadow: 1px 10px 50px -6px rgba(0,0,0,0.19);
-}
-
-.faq-container h1{
-
-    font-size: 25px;
-}
-/* FAQ Scroll */
-.faq-container::-webkit-scrollbar {
-    width: 20px;
-}
-
-.faq-container::-webkit-scrollbar-track {
-    
-    border-radius: 10px;
-}
-.faq-container::-webkit-scrollbar-thumb {
-    background: #f39c12; 
-    border-radius: 10px;
-}
-.faq-container::-webkit-scrollbar-thumb:hover {
-    background: #f39c12;
-}
+/* Collapse FAQs */
 .faq-title{
-    width: 60%;
+    width: 50%;
     margin: auto;
-}   
-.faq p{
-    font-size: 1rem;
+}
+.accordions {
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+.accordion-item {
+    background-color: #ffff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.accordion-item .accordion-title {
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.4s;
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion-item .accordion-title.active-title {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.accordion-item .accordion-title h2 {
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down {
+    transform: rotate(0);
+    transition: 0.4s;
+    color: black;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down.chevron-top {
+    transform: rotate(-180deg);
+}
+
+.accordion-item .accordion-content {
+    display: none;
+    line-height: 1.7;
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion-item .accordion-content.active {
+    display: block;
+}
+
+.accordion-item .accordion-content p {
+    margin: 0;
 }
 
 /* Button */
@@ -241,9 +260,6 @@ input.invalid {
     #regForm {
       width: 100%;
     }
-    .faq-container{
-        width: 90%;
-    }
     .proceed-btn{
         width: 90%;
     }
@@ -255,5 +271,8 @@ input.invalid {
     }
     .faq-title{
         width: 90%;
-    }  
+    } 
+    .accordions {
+        width: 90%;
+    } 
   }
